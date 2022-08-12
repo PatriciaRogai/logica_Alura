@@ -1,0 +1,25 @@
+<meta charset = "UTF-8">
+
+<script>
+
+//
+
+    function pulaLinha(){
+        document.write("<br><br>");
+    }
+
+    var quantidadeDeAnos = 2022 - 1500;
+    var mediaIdades = 28;
+    var qtdeDeGeracoes = quantidadeDeAnos / mediaIdades;
+
+    function mostra(mensagem){
+        document.write(mensagem);
+        pulaLinha();
+       
+    }
+
+    mostra("Quantidade de Anos desde 1500 é " + quantidadeDeAnos);
+    mostra("A média de idade para ter filho é " + mediaIdades);
+    mostra("Desde 1500 se passaram cerca de " + Math.round(qtdeDeGeracoes) + " gerações");
+
+</script>
