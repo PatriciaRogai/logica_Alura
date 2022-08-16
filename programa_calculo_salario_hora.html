@@ -1,0 +1,31 @@
+<meta charset ="UTF-8">
+
+
+<script>
+
+    //Programa para calcular seu salário hora
+
+
+    function pulaLinha(){
+        document.write("<br")
+    }
+
+    function mostra(calculo){
+        document.write(calculo);
+        pulaLinha();
+    }
+
+    function CalculaSalarioHora(salario, divisor){
+        return (salario / divisor);
+    }
+
+    var nome = prompt("Digite seu nome:");
+    var salarioInformado = prompt(nome + ", digite seu salario");
+    var divisorInformado = prompt(nome + ", digite seu divisor mensal");
+
+    var salarioHora = CalculaSalarioHora(salarioInformado, divisorInformado);
+
+    document.write(nome + " seu salário hora é " + salarioHora);
+
+
+    </script>
